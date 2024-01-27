@@ -16,36 +16,47 @@
   <div id="container">
     <div id="search-container">
       <h1>Github User Info</h1>
-      <input type='text' id='userId' placeholder="Github_user_id" required>
+      <input type='text' id='user-id' placeholder="Github_user_id" required>
       <button>Enter</button>
     </div>
 
-    <div id="userCard">
-      <div id="imgAndName">
-        <div id="img"></div>
-        <div id="personDetail">
-          <div id="name"></div>
-          <div id="id"></div>
-          <div id="joinedDate"></div>
+    <div id="user-card">
+      <div id="img-and-name">
+        <div id="img">
+          <img src="https://avatars.githubusercontent.com/u/72787049?v=4">
+        </div>
+        <div id="person-detail">
+          <div id="name">Mohd. Samad Siddiqui</div>
+          <div id="id">Mohd-Samad-Siddiqui</div>
+          <div id="joined-date">Joined on 13-10-2020</div>
         </div>
       </div>
-      <div id="bio"></div>
-      <div id="followersSection">
-        <div id="numOfRepos"></div>
-        <div id="followers"></div>
-        <div id="following"></div>
+      <div id="bio">-----Front-End Web App Developer----- HTML || CSS || JavaScript || React || MySQL</div>
+      <div id="followers-section">
+        <div id="num-of-repos" class="number-detail">
+          <span class="heading-inside-box">Repos</span>
+          <span class="numbers" id="repos-number">15</span>
+        </div>
+        <div id="followers" class="number-detail">
+          <span class="heading-inside-box">Followers</span>
+          <span class="numbers" id="followers-number">0</span>
+        </div>
+        <div id="following" class="number-detail">
+          <span class="heading-inside-box">Following</span>
+          <span class="numbers" id="following-number">2</span>
+        </div>
       </div>
-      <div id="lastSection">
-        <div id="upperPart">
+      <div id="last-section">
+        <div id="upper-part">
           <div id="location">
             <div class="icon"></div>
             <span class=""></span>
           </div>
           <div id="twitter"></div>
         </div>
-        <div id="lowerPart">
+        <div id="lower-part">
           <div id="email"></div>
-          <div id="reposDetail"></div>
+          <div id="repos-detail"></div>
         </div>
       </div>
     </div>

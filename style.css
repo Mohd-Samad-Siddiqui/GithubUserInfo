@@ -6,52 +6,119 @@ html {
 body {
   font-family: 'Roboto Mono', monospace;
   background-image: linear-gradient(to top left, #232B2B, #0E0C0A, #040406);
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #container {
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 2rem;
 }
 
 #search-container {
-  padding: 0rem 3rem 2rem 3rem;
+  width: 80%;
+  padding: 0rem 2rem 2rem 2rem;
   border-radius: 0.8rem;
   box-shadow: rgba(256, 256, 256, 0.1) 0px 10px 50px;
   background-color: #060606;
   text-align: center;
-}
-
-h1 {
-  color: #fff;
+  margin-top: 1rem;
 }
 
 input {
   width: 72%;
   padding: 0.5rem 0.5rem;
   border-radius: 5px;
-  font-family: 'Roboto Mono', monospace !important;
+  font-family: 'Roboto Mono', monospace;
   background-color: #1A2421;
   color: #fff;
   border: none;
   outline: none;
 }
 
-button{
+button {
   width: 3.5rem;
   padding: 0.5rem 0.5rem;
   border-radius: 5px;
   font-family: 'Roboto Mono', monospace;
-  background-color: #1A2421;
-  color: #fff;
+  background-color: #f5c000;
+  color: #000;
   border: none;
 }
-button:hover{
-  background-color: #2C3539;
+
+button:hover {
+  background-color: #fbda03;
   cursor: pointer;
+}
+
+#user-card {
+  width: 80%;
+  margin-top: 1rem;
+  border-radius: 0.8rem;
+  padding: 2rem 2rem 2rem 2rem;
+  box-shadow: rgba(256, 256, 256, 0.1) 0px 10px 50px;
+  background-color: #060606;
+}
+
+#img-and-name {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#img {
+  margin-right: 2rem;
+}
+
+#img img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid #f5c000;
+}
+
+#name {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#id {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  color: #f5c000;
+  margin-left: 10px;
+}
+
+#joined-date {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+#bio {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+#followers-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: #1A2421;
+  border-radius: 10px;
+}
+
+.number-detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.numbers {
+  margin-top: 0.3rem;
+  color: #f5c000;
 }
