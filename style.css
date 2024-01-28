@@ -107,6 +107,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 1rem;
   padding: 1rem 0;
   background-color: #1A2421;
   border-radius: 10px;
@@ -121,4 +122,46 @@ button:hover {
 .numbers {
   margin-top: 0.3rem;
   color: #f5c000;
+}
+
+#upper-part{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+#lower-part{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#location{
+  display: flex;
+}
+
+#twitter{
+  display: flex;
+}
+
+#email{
+  display: flex;
+}
+
+#repos-detail{
+  display: flex;
+}
+
+.icon{
+  margin-right: 0.4rem;
+}
+
+svg{
+  fill: #f5c000;
+}
+
+a{
+  color: #fff;
+  border-bottom: 2px solid #f5c000;
+  text-decoration: none;
 }
