@@ -57,6 +57,7 @@ button:hover {
 }
 
 #user-card {
+  display: none;
   width: 80%;
   margin-top: 1rem;
   border-radius: 0.8rem;
@@ -161,7 +162,6 @@ svg{
 }
 
 a{
-  color: #fff;
-  border-bottom: 2px solid #f5c000;
+  color: #f5c000;
   text-decoration: none;
 }
