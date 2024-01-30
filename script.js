@@ -40,7 +40,15 @@ function fetchUserData(username){
       displayCard();
     }
     else{
+      console.log("here")
       console.log(xhr.status);
+      document.getElementById('user-id').placeholder = "Invalid_user_id";
+      userInput.classList.add('error');
+      setTimeout(() => {
+        document.getElementById('user-id').placeholder = "Github_user_id";
+        userInput.classList.remove('error');
+      }, 10000)
+      console.log("here2")
     }
   }
   xhr.send();

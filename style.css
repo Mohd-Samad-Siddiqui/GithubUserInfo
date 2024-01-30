@@ -125,43 +125,47 @@ button:hover {
   color: #f5c000;
 }
 
-#upper-part{
+#upper-part {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.8rem;
 }
 
-#lower-part{
+#lower-part {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#location{
+#location {
   display: flex;
 }
 
-#twitter{
+#twitter {
   display: flex;
 }
 
-#email{
+#email {
   display: flex;
 }
 
-#repos-detail{
+#repos-detail {
   display: flex;
 }
 
-.icon{
+.icon {
   margin-right: 0.4rem;
 }
 
-svg{
+svg {
   fill: #f5c000;
 }
 
-a{
+a {
   color: #f5c000;
   text-decoration: none;
+}
+
+.error::-webkit-input-placeholder {
+  color: #ff3333;
 }
