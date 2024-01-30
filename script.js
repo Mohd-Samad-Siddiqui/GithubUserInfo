@@ -67,7 +67,7 @@ function displayCard() {
   userId.innerHTML = userData.login;
   userId.href = userData.html_url;
   const date = dateConvertor(userData.created_at);
-  joinedData.innerHTML = date;
+  joinedData.innerHTML = "Joined " + date;
   bio.innerHTML = userData.bio !== null ? userData.bio : "";
   reposNum.innerHTML = userData.public_repos;
   followersNum.innerHTML = userData.followers;
