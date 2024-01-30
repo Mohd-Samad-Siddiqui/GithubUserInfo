@@ -19,27 +19,27 @@ let userHandleInput, userData;
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   userHandleInput = userInput.value;
-  if(userHandleInput === ''){
+  if (userHandleInput === '') {
     document.getElementById("user-id").placeholder = "Enter user_id first";
   }
-  else{
+  else {
     document.getElementById("user-id").placeholder = "Github user_id";
     fetchUserData(userHandleInput);
     userInput.value = '';
-  }  
+  }
 })
 
-function fetchUserData(username){
+function fetchUserData(username) {
   const xhr = new XMLHttpRequest();
   let url = "https://api.github.com/users/" + username;
   xhr.open('GET', url);
   xhr.onload = function() {
-    if(xhr.status === 200){
+    if (xhr.status === 200) {
       userData = JSON.parse(xhr.responseText);
       console.log(userData);
       displayCard();
     }
-    else{
+    else {
       console.log("here")
       console.log(xhr.status);
       document.getElementById('user-id').placeholder = "Invalid_user_id";
@@ -61,7 +61,7 @@ const dateConvertor = (createdDate) => {
   return `${date} ${month} ${year}`;
 }
 
-function displayCard(){
+function displayCard() {
   userImg.src = userData.avatar_url;
   userName.innerHTML = userData.name;
   userId.innerHTML = userData.login;
@@ -73,23 +73,23 @@ function displayCard(){
   followersNum.innerHTML = userData.followers;
   followingNum.innerHTML = userData.following;
 
-  if(userData.location){
-    userLocation.innerHTML = userData.location; 
-  }else{
+  if (userData.location) {
+    userLocation.innerHTML = userData.location;
+  } else {
     userLocation.innerHTML = "Not Available";
     userLocation.parentElement.style.opacity = 0.3;
   }
-  
-  if(userData.twitter_username){
-    userTwitterHandle.innerHTML = userData.twitter_username; 
-  }else{
+
+  if (userData.twitter_username) {
+    userTwitterHandle.innerHTML = userData.twitter_username;
+  } else {
     userTwitterHandle.innerHTML = "Not Available";
     userTwitterHandle.parentElement.style.opacity = 0.3;
   }
 
-  if(userData.mail){
-    userMail.innerHTML = userData.mail; 
-  }else{
+  if (userData.mail) {
+    userMail.innerHTML = userData.mail;
+  } else {
     userMail.innerHTML = "Not Available";
     userMail.parentElement.style.opacity = 0.3;
   }
